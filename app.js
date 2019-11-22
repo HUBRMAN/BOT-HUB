@@ -37,16 +37,6 @@ bot.on("messageCreate", (msg) => {
                           "name": "🙄",
                           "value": " **Si ton problème persiste, n'hésite pas à contacter un @support ! "
                         },
-                        {
-                          "name": "<:thonkang:219069250692841473>",
-                          "value": "these last two",
-                          "inline": true
-                        },
-                        {
-                          "name": "<:thonkang:219069250692841473>",
-                          "value": "are inline fields",
-                          "inline": true
-                        }
                       ]
                     }
                   };
