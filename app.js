@@ -1,7 +1,7 @@
 const Eris = require("eris");
 const Embed_Builder = require("eris_embed_builder");
 const prefix = "!";
-var bot = new Eris("NjQ3MzgzMjgyOTQ1NzUzMDkx.XdftgQ.0YGoOlyGPOJkn1pAqPd7BhhNHOQ");
+var bot = new Eris("NjQ3MzgzMjgyOTQ1NzUzMDkx.XdgHSg.FcER91V6sm5hdIPMHcEZcsTUPqE");
 bot.on("ready", () => {
     console.log("Je suis prêt et opérationnel !");
 });
