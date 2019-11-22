@@ -1,47 +1,41 @@
 const Eris = require("eris");
-var prefix = "!";
-var bot = new Eris("NjQ3MzgzMjgyOTQ1NzUzMDkx.Xde5CA.atvajS5fxYMu9M4xZnA1ipbbpuI");
+const Embed_Builder = require("eris_embed_builder");
+const prefix = "!";
+var bot = new Eris("NjQ3MzgzMjgyOTQ1NzUzMDkx.XdftgQ.0YGoOlyGPOJkn1pAqPd7BhhNHOQ");
 bot.on("ready", () => {
-    console.log("Je suis prêt !");
+    console.log("Je suis prêt et opérationnel !");
 });
 bot.on("messageCreate", (msg) => {
     switch(msg.content){
         case prefix + "ip":
                 const data = {
-                    "content": "this `supports` __a__ **subset** *of* ~~markdown~~ 😃 ```js\nfunction foo(bar) {\n  console.log(bar);\n}\n\nfoo(1);```",
                     "embed": {
-                      "title": "title ~~(did you know you can have markdown here too?)~~",
-                      "description": "this supports [named links](https://discordapp.com) on top of the previously shown subset of markdown. ```\nyes, even code blocks```",
+                      "title": "Problème de connexion au serveur !",
+                      "description": "Je suis BOT HUB, et je suis là pour t'aider à résoudre ton problème 😃 \n \n \n",
                       "url": "https://discordapp.com",
-                      "color": 11676803,
-                      "timestamp": "2019-11-22T14:08:48.582Z",
+                      "color": 4886754,
                       "footer": {
-                        "icon_url": "https://cdn.discordapp.com/embed/avatars/0.png",
-                        "text": "footer text"
+                        "icon_url": "https://yt3.ggpht.com/a/AGF-l79CpWCFUqmlrCeWtYdy6l4MqJvWllNEDsbtPg=s900-c-k-c0xffffffff-no-rj-mo",
+                        "text": "copyright AdastraGaming"
                       },
                       "thumbnail": {
-                        "url": "https://cdn.discordapp.com/embed/avatars/0.png"
+                        "url": "https://image.noelshack.com/fichiers/2019/47/5/1574430989-67600674-521441015329765-5369664045848723456-n.png"
                       },
                       "image": {
-                        "url": "https://cdn.discordapp.com/embed/avatars/0.png"
-                      },
-                      "author": {
-                        "name": "author name",
-                        "url": "https://discordapp.com",
-                        "icon_url": "https://cdn.discordapp.com/embed/avatars/0.png"
+                        "url": "https://nicolasmariuzza.com/assets/splash_1plan-de-travail-8.jpg"
                       },
                       "fields": [
                         {
-                          "name": "🤔",
-                          "value": "some of these properties have certain limits..."
+                          "name": "Tu as des difficultés à te connecter sur nos serveurs ? 🤔",
+                          "value": "Je peux te conseiller de vérifier ton ip sur le [pannel](https://account.gtav.adastragaming.fr/login) ! \n \n \n"
                         },
                         {
-                          "name": "😱",
-                          "value": "try exceeding some of them!"
+                          "name": "Tu as déjà fait un IP check sur le pannel ? 😱",
+                          "value": "N'oublies pas que nous avons changé de MP, \nnous sommes maintenant sur [ALTV](https://altv.mp/#/) !\nPour te connecter c'est très simple, voici l'adresse \n ```connect.adastragaming.fr:80```"
                         },
                         {
                           "name": "🙄",
-                          "value": "an informative error should show up, and this view will remain as-is until all issues are fixed"
+                          "value": " **Si ton problème persiste, n'hésite pas à contacter un @support ! "
                         },
                         {
                           "name": "<:thonkang:219069250692841473>",
@@ -56,7 +50,7 @@ bot.on("messageCreate", (msg) => {
                       ]
                     }
                   };
-                  client.createMessage(channelID, data);
+                  bot.createMessage(msg.channel.id, data);
         break;
     }
     if(msg.content === "!ip") {
