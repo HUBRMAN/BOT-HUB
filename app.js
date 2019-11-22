@@ -1,6 +1,6 @@
 const Eris = require("eris");
 const prefix = "!";
-var bot = new Eris("NjQ3MzgzMjgyOTQ1NzUzMDkx.XdgIPA.vEezag6Mf70vPqbNZNnwVr5FLMU");
+var bot = new Eris("NjQ3MzgzMjgyOTQ1NzUzMDkx.XdhDgA.EcJSND1fW6eVvVoCpdFJsCP8gAE");
 bot.on("ready", () => {
     console.log("Je suis prêt et opérationnel !");
 });
@@ -71,6 +71,94 @@ bot.on("messageCreate", (msg) => {
               }
             };
             bot.createMessage(msg.channel.id, data1  );
+
+            case prefix + "souris":
+                const data2 = {
+                  "embed": {
+                    "title": "Ta souris reste figée au milieu de ton écran ? 🙃 ",
+                    "description": "\n \nHello je suis l'Adastra'ssistant et je suis là pour t'aider à résoudre ton problème ! ",
+                    "color": 4886754,
+                    "footer": {
+                      "icon_url": "https://yt3.ggpht.com/a/AGF-l79CpWCFUqmlrCeWtYdy6l4MqJvWllNEDsbtPg=s900-c-k-c0xffffffff-no-rj-mo",
+                      "text": "by AdastraGaming"
+                    },
+                    "thumbnail": {
+                      "url": "https://image.noelshack.com/fichiers/2019/47/5/1574430989-67600674-521441015329765-5369664045848723456-n.png"
+                    },
+                    "image": {
+                      "url": "https://nicolasmariuzza.com/assets/splash_1plan-de-travail-13.jpg"
+                    },
+                    "fields": [
+                      {
+                        "name": "\n \nMalheureusement c'est un bug connu par nos équipes ! 🤔\n \n",
+                        "value": "\n \nLa meilleure solution et une déconnexion suivie d'une reconnexion .. "
+                      },
+                    ]
+                  }
+                };
+                bot.createMessage(msg.channel.id, data2  );
+
+                case prefix + "altv":
+                    const data3 = {
+                        "embed": {
+                          "title": "Mais comment installer AltV ?! 🤔",
+                          "description": "Je suis l'Adastra'ssistant et je suis là pour t'aider à résoudre ton problème 😃 \n \n \n",
+                          "url": "https://discordapp.com",
+                          "color": 4886754,
+                          "footer": {
+                            "icon_url": "https://yt3.ggpht.com/a/AGF-l79CpWCFUqmlrCeWtYdy6l4MqJvWllNEDsbtPg=s900-c-k-c0xffffffff-no-rj-mo",
+                            "text": "by AdastraGaming"
+                          },
+                          "image": {
+                            "url": "https://altv.mp/img/og-image.jpg"
+                          },
+                          "fields": [
+                            {
+                              "name": "⚠️Pour installer AltV, il faut quelques prérequis !⚠️\n \n \n",
+                              "value": "\n \n \nEffectivement, votre fichier GTA V doit être le plus propre possible sinon vous risquez des erreurs au lancement d'ALT V ! \n \n \n"
+                            },
+                            {
+                              "name": "⚠️Vous pouvez maintenant installer Alt V⚠️",
+                              "value": "\nIl est maintenant temps d'installer [ALTV](https://altv.mp/#/downloads) !"
+                            },
+                            {
+                              "name": "⚠️N'installe pas Alt V n'importe où !",
+                              "value": "Il est fortement conseillé d'installer le dossier Alt V dans la racine de C ! "
+                            },
+                            {
+                              "name": "⚠️Nous vous conseillons de créer un dossier adapté⚠️",
+                              "value": "Effectivement, créez un dossier dédié à AltV où se trouve les fichiers en rapport avec le MP"
+                            },
+                          ]
+                        }
+                      };
+                      bot.createMessage(msg.channel.id, data3);
+            break;
+
+          case prefix + "aide":
+                      const data4 = {
+                        "embed": {
+                          "title":"Que puis-je faire pour vous ?!",
+                          "description": "Je suis l'Adastra'ssistant et voici ce que je propose :",
+                          "url": "https://www.discordapp.com",
+                          "color": 4886754,
+                          "footer":{
+                            "icon_url": "https://yt3.ggpht.com/a/AGF-l79CpWCFUqmlrCeWtYdy6l4MqJvWllNEDsbtPg=s900-c-k-c0xffffffff-no-rj-mo",
+                            "text": "by AdastraGaming"
+                          },
+                          "image": {
+                            "url": "https://nicolasmariuzza.com/assets/splash_1plan-de-travail-8.jpg" 
+                          },
+                          "fields": [
+                          {
+                            "name": "Voici nos différentes commandes (toujours avec ! devant)",
+                            "value": "ip -> ipcheck\ntfr -> problème de TFR\naltv -> installation d'Alt V\naide -> liste de commandes"
+                          },
+                        ]
+                      }
+                    };
+                    bot.createMessage(msg.channel.id, data4);
+        break;
     }
 });
 bot.connect();
