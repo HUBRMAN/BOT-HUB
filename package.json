@@ -1,0 +1,26 @@
+{
+  "name": "bot-hub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "eris": "^0.11.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HUBRMAN/BOT-HUB.git"
+  },
+  "keywords": [
+    "Non"
+  ],
+  "author": "HUBR",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HUBRMAN/BOT-HUB/issues"
+  },
+  "homepage": "https://github.com/HUBRMAN/BOT-HUB#readme"
+}
